@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai|Righteous&display=swap');
+
+$title-font: 'Righteous', cursive, verdana;
+$normal-font:'Hind Madurai', sans-serif;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #c18fdc, #86acff, #00c7ff, #00ddf8, #12ebcf);
+  max-width: 1000px;
+  font-size: 1rem; /* or 16px */
+  font-family: $normal-font;
+}
+
+.title {
+  font-family: $title-font;
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: bold;
+  color:rgb(259,32,41);
+  text-shadow: 5px 5px 10px rgb(246,220,171);
+
+  &:hover {
+    color: rgb(246,220,171);
+    text-shadow: 5px 5px 10px rgb(259,32,41);
+    transform: scale(1.2);
+  }
+}
+
+.caption {
+  font-family: $title-font;
+  color: gold;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  background-color: rgba(259,32,41,0.4);
+  border-radius: 0.3rem;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 90px 30px auto 1fr;
+  grid-row-gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+.tribute-info {
+  justify-self: start;
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 10px;
+  align-items: center;
+  justify-items: center;
+
+  p {
+    text-indent: 2rem;
+    line-height: 1.5rem;
+    max-width: 90%;
+    margin: 0 2rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.7);
+  }
+}
+
+.img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin: 0.5rem 0;
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .img-caption {
+    color: rgba(0, 0, 0,0.5);
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    grid-template-rows: 60px 30px auto 1fr;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
