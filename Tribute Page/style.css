@@ -15,7 +15,7 @@ body {
   font-family: "Hind Madurai", sans-serif;
 }
 
-.title {
+#title {
   font-family: "Righteous", cursive, verdana;
   font-size: 5rem;
   font-style: italic;
@@ -24,14 +24,14 @@ body {
   text-shadow: 5px 5px 10px #f6dcab;
 }
 
-.title:hover {
+#title:hover {
   color: #f6dcab;
   text-shadow: 5px 5px 10px #ff2029;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.caption {
+#caption {
   font-family: "Righteous", cursive, verdana;
   color: gold;
   font-weight: bold;
@@ -40,7 +40,7 @@ body {
   border-radius: 0.3rem;
 }
 
-.main {
+#main {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 90px 30px auto 1fr;
@@ -52,7 +52,7 @@ body {
   justify-items: center;
 }
 
-.tribute-info {
+#tribute-info {
   -ms-grid-column-align: start;
       justify-self: start;
   display: -ms-grid;
@@ -66,7 +66,17 @@ body {
   justify-items: center;
 }
 
-.tribute-info p {
+#tribute-info .disclaimer {
+  margin: 1rem 0rem;
+  padding: 0.5rem 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  word-spacing: 0.1rem;
+  letter-spacing: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-left: 5px solid red;
+}
+
+#tribute-info p {
   text-indent: 2rem;
   line-height: 1.5rem;
   max-width: 90%;
@@ -76,7 +86,7 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.img-div {
+#img-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,23 +102,23 @@ body {
           justify-content: center;
 }
 
-.img-div img {
+#img-div img {
   margin: 0.5rem 0;
   max-width: 90vw;
   height: auto;
 }
 
-.img-div .img-caption {
+#img-div #img-caption {
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
 }
 
 @media screen and (max-width: 700px) {
-  .main {
+  #main {
     -ms-grid-rows: 60px 30px auto 1fr;
         grid-template-rows: 60px 30px auto 1fr;
   }
-  .title {
+  #title {
     font-size: 3rem;
   }
 }
