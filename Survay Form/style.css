@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#de56eb), color-stop(#7a95ff), color-stop(#00bbff), color-stop(#00d3ff), to(#43e3e3));
+  background-image: linear-gradient(to right, #de56eb, #7a95ff, #00bbff, #00d3ff, #43e3e3);
+  height: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 10px auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  height: calc(100vh - 20px);
+}
+
+.container #title {
+  color: #5c5ce2;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px pink;
+  margin-top: 10px;
+}
+
+.container #description {
+  width: 80%;
+  margin: 1rem auto;
+  border-bottom: 1px solid darkgray;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  border-bottom-width: 2px;
+}
+
+.container #survey-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.container #survey-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.container #survey-form .form-group label {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.1rem;
+}
+
+.container #survey-form .form-group input {
+  width: 400px;
+  height: 50px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container #survey-form .form-group:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 400px;
+}
+
+.container #survey-form .form-group:last-child input {
+  width: 195px;
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: -webkit-gradient(linear, left top, right top, from(#de56eb), color-stop(#7a95ff), color-stop(#00bbff), color-stop(#00d3ff), to(#43e3e3));
+  background-image: linear-gradient(to right, #de56eb, #7a95ff, #00bbff, #00d3ff, #43e3e3);
+  color: rgba(0, 0, 0, 0.6);
+}
+/*# sourceMappingURL=style.css.map */

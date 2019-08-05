@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Simple Survey</h1>
+      <p id="description">
+        This is a simple survey form for gathering personal information about user. User has to
+        enter his/her name, email and age.
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter Name" />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-group">
+          <label for="number-label">Age:</label>
+          <input type="number" name="age" id="number" placeholder="Enter Age" min="18" max="100" />
+        </div>
+        <div class="form-group">
+          <label for="employementstatus">Employement Staus:</label>
+          <select name="employementstatus" id="dropdown">
+            <option>Student</option>
+            <option>Employed</option>
+            <option>Self-Employed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="number-label">Gender:</label>
+          <input type="radio" name="gender" id="gendermale" /> Male
+          <input type="radio" name="gender" id="genderfemale" /> Female
+        </div>
+        <div class="form-group">
+          <label for="number-label">Area of interest:</label>
+          <input type="checkbox" name="frontend" id="frontend" value="frontend"> Front-End
+          <input type="checkbox" name="frontend" id="frontend" value="frontend"> Back-End
+          <input type="checkbox" name="frontend" id="frontend" value="frontend"> Full-Stack
+        </div>
+        <div class="form-group">
+            <label for="number-label">Comments:</label>
+            <textarea name="comment" id="comment" cols="60" rows="5"></textarea>
+          </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" id="submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
